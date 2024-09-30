@@ -1,0 +1,88 @@
+<!-- <!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/AgendaInteractiva.css">
+    <title>Agenda Interactiva</title>
+</head>
+<body>
+    
+    <div class="contenedor" id="container">
+
+        
+        <h1 class="fituloApp" id="appTittle">Agenda Interactiva</h1>
+
+        
+        <form class="formulario" id="formulary"> 
+            <h2 class="subtitulo1" id="subTittle1">Esta agenda interactiva permite al usuario crear y eliminar recordatorios para sus eventos, si deseas usarla y crear recordatorios por favor llena el formulario.</h2>
+            <label for="titulo del Evento" class="tituloEvento" id="eventTittle">Título del Evento</label>
+            <input type="text" name="EntradaTituloEvento" id="InputTittleEvent"> 
+            <label for="fecha" class="fecha" id="date">Fecha</label> 
+            <input type="date" name="EntradaFecha" id="InputDate"> 
+            <label for="hora" class="hora" id="hour">Hora</label>
+            <input type="time" name="EntradaHora" id="InputHour">
+            <button type="submit" class="botonAgregarEvento" id="addEvent-button">Agendar Evento</button>
+        </form>
+          
+        <div class="contenedorEventos" id="containerEvents"> 
+            <h2 class="subtitulo2" id="subTittle2">Eventos Registrados</h2>
+            <ul class="listaEventos" id="eventList">
+                
+            </ul>
+        </div>
+
+    </div>
+
+    <button class="boton-flotante" id="floatbutton">Play Music</button>
+    <audio src="utils/sounds/lofi_song.m4a" class="cancion" id="song" ></audio>
+
+
+    <script src="js/AgendaInteractivaa.js"></script>
+    
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/AgendaInteractiva.css">
+    <title>Agenda Interactiva</title>
+</head>
+<body>
+    
+    <div class="contenedor" id="container">
+
+        <h1 class="fituloApp" id="appTittle">Agenda Interactiva</h1>
+
+        <form class="formulario" id="formulary">
+            <h2 class="subtitulo1" id="subTittle1">Esta agenda interactiva permite al usuario crear y eliminar recordatorios para sus eventos. Llena el formulario.</h2>
+            <label for="titulo del Evento" class="tituloEvento" id="eventTittle">Título del Evento</label>
+            <input type="text" name="EntradaTituloEvento" id="InputTittleEvent">
+            <label for="fecha" class="fecha" id="date">Fecha</label>
+            <input type="date" name="EntradaFecha" id="InputDate">
+            <label for="hora" class="hora" id="hour">Hora</label>
+            <input type="time" name="EntradaHora" id="InputHour">
+            <button type="submit" class="botonAgregarEvento" id="addEvent-button">Agendar Evento</button>
+        </form>
+
+        <div class="contenedorFiltrar" id="filterContainer">
+            <input type="date" class="filtrarFecha" id="filterDateInput">
+            <button class="botonfiltrar" id="filterDateButton">Buscar por Fecha</button>
+        </div>
+          
+        <div class="contenedorEventos" id="containerEvents"> 
+            <h2 class="subtitulo2" id="subTittle2">Eventos Registrados</h2>
+            <ul class="listaEventos" id="eventList"></ul>
+        </div>
+    </div>
+
+    <button class="boton-flotante" id="floatbutton">Play Music</button>
+    <audio src="utils/sounds/lofi_song.m4a" class="cancion" id="song"></audio>
+
+    <script src="js/AgendaInteractivaa.js"></script>
+    
+</body>
+</html> 
